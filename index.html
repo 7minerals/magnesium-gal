@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Magnesium Gal — Notes on magnesium, sleep and midlife energy</title>
+<meta name="description" content="Sara Walker reads the magnesium research so you don't have to. Plain-English notes on sleep, cramps, stress and what the studies actually say.">
+<link rel="canonical" href="https://magnesiumgal.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F1F4EE;
+  --surface:#FFFFFF;
+  --ink:#22302A;
+  --muted:#6C7A70;
+  --accent:#7A4A5E;
+  --line:#D7DFD4;
+  --maxw:720px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Karla",system-ui,-apple-system,sans-serif;
+  font-size:17px;
+  line-height:1.65;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+header{padding:48px 0 0}
+.mast{
+  display:flex;align-items:baseline;justify-content:space-between;
+  gap:16px;flex-wrap:wrap;
+  padding-bottom:20px;border-bottom:1px solid var(--line);
+}
+.logo{
+  font-family:"Fraunces",Georgia,serif;
+  font-size:30px;font-weight:600;letter-spacing:-0.02em;
+  color:var(--ink);
+}
+.logo span{color:var(--accent)}
+nav a{
+  font-size:14px;color:var(--muted);margin-left:20px;
+  text-transform:lowercase;letter-spacing:0.02em;
+}
+nav a:first-child{margin-left:0}
+
+.hero{padding:56px 0 44px;border-bottom:1px solid var(--line)}
+.hero h1{
+  font-family:"Fraunces",Georgia,serif;
+  font-size:clamp(30px,5.5vw,44px);
+  font-weight:400;line-height:1.18;letter-spacing:-0.02em;
+  margin:0 0 20px;
+}
+.hero p{margin:0 0 14px;color:var(--muted);max-width:56ch}
+.hero p strong{color:var(--ink);font-weight:500}
+
+.posts{padding:44px 0 8px}
+.eyebrow{
+  font-size:12px;letter-spacing:0.14em;text-transform:uppercase;
+  color:var(--muted);margin:0 0 28px;
+}
+.post{
+  display:block;padding:22px 0 22px 22px;
+  border-bottom:1px solid var(--line);
+  border-left:2px solid transparent;
+  transition:border-color .18s ease,padding-left .18s ease;
+}
+.post:hover{border-left-color:var(--accent);padding-left:28px;text-decoration:none}
+.post h2{
+  font-family:"Fraunces",Georgia,serif;
+  font-size:21px;font-weight:400;line-height:1.35;
+  margin:0 0 6px;color:var(--ink);
+}
+.post:hover h2{color:var(--accent)}
+.post .meta{font-size:13px;color:var(--muted);letter-spacing:0.01em}
+
+.state{padding:32px 0;color:var(--muted);font-size:15px}
+
+.about{
+  margin:48px 0 0;padding:28px;
+  background:var(--surface);border:1px solid var(--line);border-radius:4px;
+}
+.about h3{
+  font-family:"Fraunces",Georgia,serif;
+  font-size:19px;font-weight:600;margin:0 0 10px;
+}
+.about p{margin:0 0 10px;font-size:15px;color:var(--muted)}
+.about p:last-child{margin-bottom:0}
+
+footer{margin-top:56px;padding:28px 0 48px;border-top:1px solid var(--line)}
+footer p{font-size:13px;color:var(--muted);margin:0 0 8px;max-width:62ch}
+
+@media (prefers-reduced-motion:reduce){
+  *{transition:none !important;animation:none !important}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="mast">
+      <div class="logo">Magnesium <span>Gal</span></div>
+      <nav>
+        <a href="#posts">Posts</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <h1>I read the magnesium research so you don't have to.</h1>
+      <p>I'm <strong>Sara Walker</strong>. Somewhere around forty-five I stopped sleeping properly, started waking up with calf cramps, and went looking for answers. What I found was a wall of supplement marketing and a much quieter pile of actual studies.</p>
+      <p>So I started reading the studies. Glycinate versus citrate versus oxide. What the trials actually measured. Where the evidence is decent and where it's thin. Then I write it down in plain English.</p>
+    </div>
+  </section>
+
+  <section class="posts" id="posts">
+    <div class="wrap">
+      <p class="eyebrow">Latest notes</p>
+      <div id="post-list"><p class="state">Loading posts…</p></div>
+    </div>
+  </section>
+
+  <section class="wrap" id="about">
+    <div class="about">
+      <h3>About Sara</h3>
+      <p>Sara Walker is the pen name of the editorial team behind Magnesium Gal. Articles are written and reviewed by our editors and cite published research where claims are made.</p>
+      <p>Nothing here is medical advice. Magnesium interacts with some medications and isn't right for everyone, particularly with reduced kidney function. Talk to your doctor before starting a supplement.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Magnesium Gal publishes independent, research-referenced writing about magnesium and everyday wellbeing.</p>
+    <p>Some links on this site are affiliate or brand-partner links, and we may earn a commission if you buy through them. This never changes what we recommend.</p>
+    <p>© <span id="yr"></span> Magnesium Gal</p>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+const REPO = '7minerals/magnesium-gal';
+const list = document.getElementById('post-list');
+
+function titleFromName(name){
+  return name
+    .replace(/\.html$/i,'')
+    .replace(/[-_]/g,' ')
+    .replace(/\s+\d{6,}$/,'')
+    .replace(/\b\w/g, c => c.toUpperCase());
+}
+
+fetch('https://api.github.com/repos/' + REPO + '/contents/')
+  .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
+  .then(files => {
+    const posts = files.filter(f =>
+      f.type === 'file' &&
+      /\.html$/i.test(f.name) &&
+      f.name.toLowerCase() !== 'index.html' &&
+      !/^google[0-9a-f]+\.html$/i.test(f.name)
+    );
+
+    if(!posts.length){
+      list.innerHTML = '<p class="state">No posts yet. The first one is on its way.</p>';
+      return;
+    }
+
+    posts.sort((a,b) => b.name.localeCompare(a.name));
+
+    list.innerHTML = posts.map(p =>
+      '<a class="post" href="' + p.name + '">' +
+        '<h2>' + titleFromName(p.name) + '</h2>' +
+        '<div class="meta">Read the note</div>' +
+      '</a>'
+    ).join('');
+  })
+  .catch(() => {
+    list.innerHTML = '<p class="state">Posts couldn\'t load right now. Refresh in a moment.</p>';
+  });
+</script>
+
+</body>
+</html>
