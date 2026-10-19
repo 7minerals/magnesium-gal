@@ -130,6 +130,11 @@ footer p{font-size:13px;color:var(--muted);margin:0 0 8px;max-width:62ch}
   <section class="posts" id="posts">
     <div class="wrap">
       <p class="eyebrow">Latest notes</p>
+      <!-- Static link so Google can find this post without running the script below -->
+      <a class="post" href="/tests/can-leg-cramps-mean-magnesium-deficiency.html">
+        <h2>Can Leg Cramps Mean Magnesium Deficiency?</h2>
+        <div class="meta">Read the note</div>
+      </a>
       <div id="post-list"><p class="state">Loading posts…</p></div>
     </div>
   </section>
@@ -176,7 +181,7 @@ fetch('https://api.github.com/repos/' + REPO + '/contents/')
     );
 
     if(!posts.length){
-      list.innerHTML = '<p class="state">No posts yet. The first one is on its way.</p>';
+      list.innerHTML = '';
       return;
     }
 
@@ -190,7 +195,7 @@ fetch('https://api.github.com/repos/' + REPO + '/contents/')
     ).join('');
   })
   .catch(() => {
-    list.innerHTML = '<p class="state">Posts couldn\'t load right now. Refresh in a moment.</p>';
+    list.innerHTML = '';
   });
 </script>
 
