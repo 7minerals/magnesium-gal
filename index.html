@@ -257,7 +257,8 @@ Promise.all([getFolder(''), getFolder('tests')]).then(([root, tests]) => {
   list.innerHTML = posts.map(p =>
     '<a class="post" href="' + p.href + '"><h3>' + titleFromName(p.name) + '</h3><div class="meta">Read the note</div></a>'
   ).join('');
-  moreSection.hidden = false;
+  // Archive section switched off until the older posts are reviewed:
+  // moreSection.hidden = false;
 });
 </script>
 
