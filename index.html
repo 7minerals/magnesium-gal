@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Magnesium Gal — Notes on magnesium, sleep and midlife energy</title>
-<meta name="description" content="Sara Walker reads the magnesium research so you don't have to. Plain-English notes on sleep, cramps, stress and what the studies actually say.">
+<title>Magnesium Gal | Plain-English notes on sleep, strength and midlife health</title>
+<meta name="description" content="Plain-English, research-referenced notes on sleep, bone and muscle health, and magnesium. Every article shows its sources.">
 <link rel="canonical" href="https://magnesiumgal.com/">
 <meta name="facebook-domain-verification" content="jmejn5nyk2vj0x1a6fjowa0zqx1fvc" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,13 +15,13 @@
   --bg:#F1F4EE;
   --surface:#FFFFFF;
   --ink:#22302A;
-  --muted:#6C7A70;
+  --muted:#5F6D63;
   --accent:#7A4A5E;
   --line:#D7DFD4;
-  --maxw:720px;
+  --maxw:760px;
 }
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 body{
   margin:0;
   background:var(--bg);
@@ -35,11 +35,11 @@ a:hover{text-decoration:underline}
 a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
 
-header{padding:48px 0 0}
+header{padding:40px 0 0}
 .mast{
   display:flex;align-items:baseline;justify-content:space-between;
-  gap:16px;flex-wrap:wrap;
-  padding-bottom:20px;border-bottom:1px solid var(--line);
+  gap:12px 24px;flex-wrap:wrap;
+  padding-bottom:18px;border-bottom:1px solid var(--line);
 }
 .logo{
   font-family:"Fraunces",Georgia,serif;
@@ -47,59 +47,69 @@ header{padding:48px 0 0}
   color:var(--ink);
 }
 .logo span{color:var(--accent)}
-nav a{
-  font-size:14px;color:var(--muted);margin-left:20px;
-  text-transform:lowercase;letter-spacing:0.02em;
-}
-nav a:first-child{margin-left:0}
+nav{display:flex;flex-wrap:wrap;gap:6px 22px}
+nav a{font-size:14px;color:var(--muted);letter-spacing:0.02em}
+nav a:hover{color:var(--accent)}
 
-.hero{padding:56px 0 44px;border-bottom:1px solid var(--line)}
+.hero{padding:52px 0 40px;border-bottom:1px solid var(--line)}
 .hero h1{
   font-family:"Fraunces",Georgia,serif;
-  font-size:clamp(30px,5.5vw,44px);
-  font-weight:400;line-height:1.18;letter-spacing:-0.02em;
-  margin:0 0 20px;
+  font-size:clamp(28px,5.2vw,42px);
+  font-weight:400;line-height:1.2;letter-spacing:-0.02em;
+  margin:0 0 18px;
 }
-.hero p{margin:0 0 14px;color:var(--muted);max-width:56ch}
-.hero p strong{color:var(--ink);font-weight:500}
+.hero p{margin:0 0 12px;color:var(--muted);max-width:58ch}
+.hero .how{
+  display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:22px;
+  font-size:14px;color:var(--ink);
+}
+.hero .how span::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--accent);margin-right:8px;vertical-align:middle}
 
-.posts{padding:44px 0 8px}
+.topic{padding:40px 0 4px;scroll-margin-top:16px}
 .eyebrow{
   font-size:12px;letter-spacing:0.14em;text-transform:uppercase;
-  color:var(--muted);margin:0 0 28px;
+  color:var(--muted);margin:0 0 6px;
 }
+.topic h2.section{
+  font-family:"Fraunces",Georgia,serif;
+  font-size:24px;font-weight:600;letter-spacing:-0.01em;margin:0 0 4px;
+}
+.topic .blurb{margin:0 0 14px;font-size:15px;color:var(--muted)}
 .post{
-  display:block;padding:22px 0 22px 22px;
+  display:block;padding:20px 0 20px 20px;
   border-bottom:1px solid var(--line);
   border-left:2px solid transparent;
   transition:border-color .18s ease,padding-left .18s ease;
+  color:var(--ink);
 }
-.post:hover{border-left-color:var(--accent);padding-left:28px;text-decoration:none}
-.post h2{
+.post:hover{border-left-color:var(--accent);padding-left:26px;text-decoration:none}
+.post h3{
   font-family:"Fraunces",Georgia,serif;
-  font-size:21px;font-weight:400;line-height:1.35;
-  margin:0 0 6px;color:var(--ink);
+  font-size:20px;font-weight:400;line-height:1.35;
+  margin:0 0 6px;
 }
-.post:hover h2{color:var(--accent)}
-.post .meta{font-size:13px;color:var(--muted);letter-spacing:0.01em}
-
-.state{padding:32px 0;color:var(--muted);font-size:15px}
+.post:hover h3{color:var(--accent)}
+.post .desc{font-size:15px;color:var(--muted);margin:0 0 4px}
+.post .meta{font-size:13px;color:var(--muted)}
 
 .about{
-  margin:48px 0 0;padding:28px;
+  margin:52px 0 0;padding:28px;
   background:var(--surface);border:1px solid var(--line);border-radius:4px;
 }
-.about h3{
+.about h2{
   font-family:"Fraunces",Georgia,serif;
-  font-size:19px;font-weight:600;margin:0 0 10px;
+  font-size:20px;font-weight:600;margin:0 0 10px;
 }
 .about p{margin:0 0 10px;font-size:15px;color:var(--muted)}
 .about p:last-child{margin-bottom:0}
+.about ul{margin:0 0 10px;padding-left:20px;font-size:15px;color:var(--muted)}
+.about li{margin-bottom:6px}
 
-footer{margin-top:56px;padding:28px 0 48px;border-top:1px solid var(--line)}
-footer p{font-size:13px;color:var(--muted);margin:0 0 8px;max-width:62ch}
+footer{margin-top:52px;padding:26px 0 48px;border-top:1px solid var(--line)}
+footer p{font-size:13px;color:var(--muted);margin:0 0 8px;max-width:64ch}
 
 @media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
   *{transition:none !important;animation:none !important}
 }
 </style>
@@ -110,8 +120,10 @@ footer p{font-size:13px;color:var(--muted);margin:0 0 8px;max-width:62ch}
   <div class="wrap">
     <div class="mast">
       <div class="logo">Magnesium <span>Gal</span></div>
-      <nav>
-        <a href="#posts">Posts</a>
+      <nav aria-label="Topics">
+        <a href="#sleep">Sleep</a>
+        <a href="#bones">Bones &amp; strength</a>
+        <a href="#magnesium">Magnesium notes</a>
         <a href="#about">About</a>
       </nav>
     </div>
@@ -121,42 +133,90 @@ footer p{font-size:13px;color:var(--muted);margin:0 0 8px;max-width:62ch}
 <main>
   <section class="hero">
     <div class="wrap">
-      <h1>I read the magnesium research so you don't have to.</h1>
-      <p>I'm <strong>Sara Walker</strong>. Somewhere around forty-five I stopped sleeping properly, started waking up with calf cramps, and went looking for answers. What I found was a wall of supplement marketing and a much quieter pile of actual studies.</p>
-      <p>So I started reading the studies. Glycinate versus citrate versus oxide. What the trials actually measured. Where the evidence is decent and where it's thin. Then I write it down in plain English.</p>
+      <h1>Plain-English notes on sleep, strength and midlife health.</h1>
+      <p>Magnesium Gal reads the research and the official guidance, then explains what it says in everyday language. Where the evidence is decent we say so. Where it is thin, we say that too.</p>
+      <div class="how" aria-label="How we write">
+        <span>Sources shown on every article</span>
+        <span>Medical guidance, not marketing claims</span>
+        <span>Evidence limits stated plainly</span>
+      </div>
     </div>
   </section>
 
-  <section class="posts" id="posts">
+  <section class="topic" id="sleep">
     <div class="wrap">
-      <p class="eyebrow">Latest notes</p>
+      <p class="eyebrow">Topic</p>
+      <h2 class="section">Sleep</h2>
+      <p class="blurb">What the evidence and NHS guidance say about sleeping better through midlife.</p>
+      <a class="post" href="/tests/perimenopause-and-sleep-what-actually-helps.html">
+        <h3>Perimenopause and Sleep: What the NHS Actually Suggests</h3>
+        <p class="desc">Night sweats, routines, caffeine and alcohol, and what CBT is.</p>
+        <div class="meta">Read the note</div>
+      </a>
+    </div>
+  </section>
+
+  <section class="topic" id="bones">
+    <div class="wrap">
+      <p class="eyebrow">Topic</p>
+      <h2 class="section">Bones &amp; strength</h2>
+      <p class="blurb">Exercise, bone density and staying strong as we age.</p>
+      <a class="post" href="/tests/does-strength-training-protect-bone-density-after-40.html">
+        <h3>Does Strength Training Protect Bone Density After 40?</h3>
+        <p class="desc">What a UK consensus statement and the NHS say, and what is still uncertain.</p>
+        <div class="meta">Read the note</div>
+      </a>
+    </div>
+  </section>
+
+  <section class="topic" id="magnesium">
+    <div class="wrap">
+      <p class="eyebrow">Topic</p>
+      <h2 class="section">Magnesium notes</h2>
+      <p class="blurb">What the research says about magnesium, with the limits of the evidence stated.</p>
       <!-- Static links so Google can find these posts without running the script below -->
       <a class="post" href="/tests/does-magnesium-help-muscle-cramps-as-you-get-older.html">
-        <h2>Does Magnesium Help Muscle Cramps as You Get Older?</h2>
+        <h3>Does Magnesium Help Muscle Cramps as You Get Older?</h3>
+        <p class="desc">A 2020 Cochrane review, an American Family Physician summary and NHS advice.</p>
         <div class="meta">Read the note</div>
       </a>
       <a class="post" href="/tests/can-leg-cramps-mean-magnesium-deficiency.html">
-        <h2>Can Leg Cramps Mean Magnesium Deficiency?</h2>
+        <h3>Can Leg Cramps Mean Magnesium Deficiency?</h3>
+        <p class="desc">What leg cramps can and cannot tell you, and how doctors check.</p>
         <div class="meta">Read the note</div>
       </a>
-      <div id="post-list"><p class="state">Loading posts…</p></div>
+    </div>
+  </section>
+
+  <section class="topic" id="more" hidden>
+    <div class="wrap">
+      <p class="eyebrow">Archive</p>
+      <h2 class="section">More notes</h2>
+      <div id="post-list"></div>
     </div>
   </section>
 
   <section class="wrap" id="about">
     <div class="about">
-      <h3>About Sara</h3>
-      <p>Sara Walker is the pen name of the editorial team behind Magnesium Gal. Articles are written and reviewed by our editors and cite published research where claims are made.</p>
-      <p>Nothing here is medical advice. Magnesium interacts with some medications and isn't right for everyone, particularly with reduced kidney function. Talk to your doctor before starting a supplement.</p>
+      <h2>About Magnesium Gal</h2>
+      <p>Magnesium Gal is written and reviewed by an editorial team. Articles are researched from published studies and official health guidance, and each one lists its sources at the bottom.</p>
+      <p><strong>How we write</strong></p>
+      <ul>
+        <li>We cite the studies and guidance behind every claim.</li>
+        <li>We say when evidence is limited or more research is needed.</li>
+        <li>We do not give medical advice or tell you what to take.</li>
+      </ul>
+      <p>Nothing here is medical advice. Speak to a doctor or pharmacist about symptoms that worry you, and before starting any supplement, especially if you take medicines or have a health condition.</p>
     </div>
   </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <p>Magnesium Gal publishes independent, research-referenced writing about magnesium and everyday wellbeing.</p>
-    <p>Some links on this site are affiliate or brand-partner links, and we may earn a commission if you buy through them. This never changes what we recommend.</p>
-    <p>© <span id="yr"></span> Magnesium Gal</p>
+    <!-- DISCLOSURE LINE: wording to be confirmed. When agreed, add it here, for example:
+    <p>Magnesium Gal is sponsored by Seven Minerals, a magnesium brand.</p> -->
+    <p>Some articles include a clearly labelled advertisement. Some links on this site may be affiliate or brand-partner links, and we may earn a commission if you buy through them.</p>
+    <p>&copy; <span id="yr"></span> Magnesium Gal</p>
   </div>
 </footer>
 
@@ -165,6 +225,8 @@ document.getElementById('yr').textContent = new Date().getFullYear();
 
 const REPO = '7minerals/magnesium-gal';
 const list = document.getElementById('post-list');
+const moreSection = document.getElementById('more');
+const shown = new Set([].map.call(document.querySelectorAll('a.post'), a => a.getAttribute('href')));
 
 function titleFromName(name){
   return name
@@ -174,33 +236,29 @@ function titleFromName(name){
     .replace(/\b\w/g, c => c.toUpperCase());
 }
 
-fetch('https://api.github.com/repos/' + REPO + '/contents/')
-  .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
-  .then(files => {
-    const posts = files.filter(f =>
-      f.type === 'file' &&
-      /\.html$/i.test(f.name) &&
-      f.name.toLowerCase() !== 'index.html' &&
-      !/^google[0-9a-f]+\.html$/i.test(f.name)
-    );
+function getFolder(path){
+  return fetch('https://api.github.com/repos/' + REPO + '/contents/' + path)
+    .then(r => r.ok ? r.json() : [])
+    .then(items => Array.isArray(items) ? items.map(f => Object.assign({}, f, {href: '/' + f.path})) : [])
+    .catch(() => []);
+}
 
-    if(!posts.length){
-      list.innerHTML = '';
-      return;
-    }
-
-    posts.sort((a,b) => b.name.localeCompare(a.name));
-
-    list.innerHTML = posts.map(p =>
-      '<a class="post" href="' + p.name + '">' +
-        '<h2>' + titleFromName(p.name) + '</h2>' +
-        '<div class="meta">Read the note</div>' +
-      '</a>'
-    ).join('');
-  })
-  .catch(() => {
-    list.innerHTML = '';
-  });
+Promise.all([getFolder(''), getFolder('tests')]).then(([root, tests]) => {
+  const posts = root.concat(tests).filter(f =>
+    f.type === 'file' &&
+    /\.html$/i.test(f.name) &&
+    f.name.toLowerCase() !== 'index.html' &&
+    !/^google[0-9a-f]+\.html$/i.test(f.name) &&
+    !/^sitemap/i.test(f.name) &&
+    !shown.has(f.href)
+  );
+  if(!posts.length) return;
+  posts.sort((a,b) => b.name.localeCompare(a.name));
+  list.innerHTML = posts.map(p =>
+    '<a class="post" href="' + p.href + '"><h3>' + titleFromName(p.name) + '</h3><div class="meta">Read the note</div></a>'
+  ).join('');
+  moreSection.hidden = false;
+});
 </script>
 
 </body>
